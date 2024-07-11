@@ -33,7 +33,7 @@ const Refer = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:8080/referal", formData);
+      await axios.post("https://accredian-backend-task-odmm.onrender.com/referal", formData);
       setToast({ open: true, message: 'Email sent successfully', severity: 'success' });
     } catch (error) {
       setToast({ open: true, message: 'Something went wrong', severity: 'error' });
